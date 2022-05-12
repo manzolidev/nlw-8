@@ -1,5 +1,5 @@
 import { ChatTeardropDots } from 'phosphor-react';
-import { Popover } from '@headlessui/react'
+import { Popover } from '@headlessui/react';
 import { WidgetForm } from './WidgetForm';
 
 export function Widget() {
@@ -8,13 +8,13 @@ export function Widget() {
       <Popover.Panel>
         <WidgetForm />
       </Popover.Panel>
-      <Popover.Button className="bg-brand-500 text-white px-3 h-12 rounded-full overflow-hidden flex items-center group">
-        <ChatTeardropDots className="w-6 h-6" />
-        <span className="max-w-0 group-hover:max-w-xs overflow-hidden transition-all duration-500 ease-linear">
+      <Popover.Button className="group flex h-12 items-center overflow-hidden rounded-full bg-brand-500 px-3 text-white">
+        <ChatTeardropDots className="h-6 w-6" />
+        <span className="max-w-0 overflow-hidden transition-all duration-500 ease-linear group-hover:max-w-xs">
           <span className="pl-2"></span>
           Feedback
         </span>
       </Popover.Button>
     </Popover>
-  )
+  );
 }
